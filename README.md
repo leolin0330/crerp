@@ -60,20 +60,3 @@ pip install oracledb
 
 ------------------------------------------------------------------------
 
-## Oracle 連線範例
-
-``` python
-conn = oracledb.connect(
-    user="username",
-    password="password",
-    dsn="ip:1521/SID"
-)
-```
-
-------------------------------------------------------------------------
-
-
-
-Timmy Lin\
-ERP System Engineer\
-Automation Developer
