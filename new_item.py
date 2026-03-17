@@ -85,8 +85,7 @@ def send_email_with_table(df: pd.DataFrame):
     today_str = date.today().strftime("%Y/%m/%d")
     df["單位換算"] = df.apply(format_unit, axis=1)
 
-    # ✅ 你的「新品建檔通知.sql」應該會回傳這些欄位（SQL alias）
-    # 若欄位名稱跟這裡不一樣（例如大小寫/空白），把 df.columns 貼我我再幫你對應
+
     col_mapping = {
         "來源": "來源",
         "料號": "料號",
