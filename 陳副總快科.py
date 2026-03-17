@@ -22,7 +22,7 @@ def export_excel():
     oracledb.init_oracle_client(lib_dir=r"D:\instantclient_11_2")
     conn = oracledb.connect(
         user="mf2000",
-        password="yrrah",  # ←移除多餘空白
+        password="yrrah", 
         dsn="192.168.2.7:1521/ORCL"
     )
     with open(SQL_PATH, "r", encoding="cp950") as f:
