@@ -58,7 +58,7 @@ and lcst.cod_item in(
 
 # ====== 3) 可調整的設定區（路徑 / 寄信 / 收件人） ======
 
-# Excel 產出要存在哪裡（注意：這是 Windows 路徑）
+# Excel 產出
 OUTPUT_DIR = r"D:\\"
 
 # SMTP 伺服器設定（公司內部 SMTP）
@@ -69,7 +69,6 @@ SMTP_PORT = 25
 SENDER = "erpinfo@creation.com.tw"
 
 # 收件者清單（To）
-# 你可以在這裡加人：例如 "leon@creation.com.tw"
 TO_LIST = [
     "timmy@creation.com.tw",
     "vickylin@creation.com.tw",
