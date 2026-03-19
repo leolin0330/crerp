@@ -38,6 +38,8 @@ def export_excel():
     today = date.today().strftime("%Y%m%d")
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     output_file = os.path.join(OUTPUT_DIR, f"雅雲塊科_{today}.xlsx")
+
+    # 輸出 Excel（index=False：不要把 DataFrame 的 index 寫進 Excel）
     df.to_excel(output_file, index=False)
     return output_file, today
 
